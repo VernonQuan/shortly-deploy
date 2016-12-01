@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
-        command: 'git add . && git commit -m "autoupload" && git push live master && git push origin master'
+        command: 'git add . && git commit -m "autoupload" && git push live master'
       }
     },
   });
@@ -110,10 +110,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('deploy', [
-    // add your deploy tasks here
-    'shell'
-  ]);
+  grunt.registerTask('deploy', ['build', 'shell']);
 
 
 };
