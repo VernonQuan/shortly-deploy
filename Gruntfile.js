@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
-        command: 'git add . && git commit -m "autoupload" && git push live master'
+        command: 'git add . && git commit -m "autoupload" && git push live master && git push origin master'
       }
     },
   });
