@@ -84,7 +84,6 @@ module.exports = function(grunt) {
       // add your production server task here
       // extra line for testing
       // more extra lines
-      // more extra lines
     } else {
       grunt.task.run([ 'server-dev' ]);
     }
